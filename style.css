@@ -1,0 +1,633 @@
+
+/* NAVIGATION BAR */
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/*  LOGO */
+.logo{
+    display: flex;
+    width: 50%; 
+    margin-left: 33%;
+}
+
+.logo-area{
+    color: hsla(16, 100%, 50%, 0.927);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.logo-area1{
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu-bar
+{
+    background: rgb(165, 42, 42);
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 0%;
+    padding: 7px;
+    height: 45px;
+}
+
+.menu-bar ul
+{
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    
+    padding: 5px;
+    align-items: center;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.menu-bar ul li:hover
+{
+ 
+    border: 1px solid white;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.sub-menu-1 ul li a{
+    color: black;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display : block;
+    position : absolute;
+    background-color : white;
+    color: black;
+    margin-top : 10px;
+    margin-left : -10px;
+    z-index: 1;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display : block;
+    margin : 5px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width : 150px;
+    padding : 5px;
+    border-bottom : 1px dotted red;
+    background : transparent;
+    border-radius : 0;
+    text-align : left;
+}
+
+.container{
+    width: 37%;
+    display: flex;
+}
+.circle{
+    justify-content: space-around 10px;
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: rgb(241, 244, 223);
+}
+.sub-cir{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    padding: 5px;   
+}
+
+.sub-cir img{
+    padding: 5px;
+}
+
+.property-05{
+   display: block;
+   padding: 5px;
+}
+
+property-15{
+   display: block;
+}
+
+.sub-cir:hover{
+    background-color: rgb(88, 130, 131);
+}
+
+.sb-title{
+    color: rgb(78, 6, 145);
+    font-size: 15px;
+   
+}
+
+
+/* IMAGE SLIDER */
+
+ body{
+    padding: 0;
+    margin: 0;
+    background-color: floralwhite;
+    align-items: center;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 600px;
+    width: 990px;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+
+
+
+@-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+}
+
+    .slide-images{
+        width: 3600px;
+        height: 800px;
+        margin: 0 0 0 -2400px;
+        position: relative;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+
+    .slide-container{
+        height: 700px;
+        width: 1200px;
+        position: relative;
+        float: left;
+        transition: 2s;
+    }
+    
+    .slide-container img{
+        height: 600px;
+        
+        position: sticky;
+    }
+  
+    .main{
+        display: flex;
+    }
+
+    /* Our Mission */
+
+    .heading-care{
+        text-align: center;
+        margin-top: 1%;
+    }
+    .heading-care p{
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .box-mission{
+        display: flex;
+    }
+    .box1{
+        background-color: rgb(4, 4, 143);
+        font-family: 'Poppins', sans-serif;
+        margin: 5px; padding: 14px;
+        width: 290px; height: 350px;
+        outline: none; border: 1px solid rgb(75, 64, 64);
+        text-decoration: none;
+        color: #fff;
+    }
+    .box2{
+        background-color: rgb(111, 62, 158);
+        font-family: 'Poppins', sans-serif;
+        margin: 5px; padding: 14px;
+        width: 290px; height: 350px;
+        outline: none; border: 1px solid rgb(75, 64, 64);
+        text-decoration: none;
+        color: #fff;
+    }
+    .box3{
+        background-color: rgb(25, 141, 25);
+        font-family: 'Poppins', sans-serif;
+        margin: 5px; padding: 14px;
+        width: 290px; height: 350px;
+        outline: none; border: 1px solid rgb(75, 64, 64);
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .Flex-box1{
+        padding: 15px 9%;
+        padding-bottom: 100px;
+    }
+
+    .Flex-box1 .box-container1{
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .Flex-box1 .box-container1 .box-mission{
+        border-radius: 5px;
+        background: #fff;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .Flex-box1 .box-container1 .box-mission img{
+        height: 100px;
+        width: 140;
+    }
+
+    .Flex-box1 .box-container1 .box-mission h4{
+        color: #fff;
+        font-size: 22px;
+        margin-top: 5%;
+    }
+
+    .Flex-box1 .box-container1 .box-mission p{
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.8;
+        justify-content: center;
+    }
+
+    .Flex-box1 .box-container1 .box-mission .btn{
+        margin-top: 10px;
+        display: inline-block;
+        background: rgb(19, 57, 121);
+        color: #fff;
+        font-size: 17px;
+        border-radius: 5px;
+        padding: 8px 25px;
+    }
+
+    .Flex-box1 .box-container1 .box-mission .btn:hover{
+        letter-spacing: 1px;
+    }
+
+    .Flex-box1 .box-container1 .btn:hover{
+        box-shadow: 0 5px 10px rgb(124, 140, 168);
+        transform: scale(1.03);
+    }
+
+    @media (max-width:768px){
+        .container{
+            padding: 20px;
+        }
+    }
+
+    /* Our Services */
+
+    .Service-heading{
+        text-align: center;
+    }
+    .service-box1{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        margin: 30px; padding: 10px;
+        width: 300px; height: 190px;
+        outline: none; border: 1px solid rgb(75, 64, 64);
+        text-decoration: none;
+        background-color: rgb(125, 46, 46);
+    }
+    .service-box2{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        margin: 30px; padding: 10px;
+        width: 300px; height: 190px;
+        outline: none; border: 1px solid rgb(75, 64, 64);
+        text-decoration: none;
+        background-color: rgb(179, 40, 40);
+    }
+    .service-box3{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        margin: 30px; padding: 10px;
+        width: 300px; height: 190px;
+        outline: none; border: 1px solid rgb(75, 64, 64);
+        text-decoration: none;
+        background-color: rgb(205, 98, 98);
+    }
+    .service p{
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+    .service{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .service img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 1px solid green;
+    }
+
+    /* NEWS And Videos */
+
+    .video-container{
+        width: 80%;
+        margin: 4px 85px;
+        align-items: center;
+    }
+    .video-container h1{
+        padding: 20px 0;
+        color: black;
+        font-size: 44px;
+        text-align:center;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .col{
+        flex-basis: 50%;
+        min-width: 250px;
+    }
+    .feature-img{
+        margin-left: -2px;
+        width: 90%;
+        position: relative;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .small-img-row{
+        display: flex;
+        background: #efefef;
+        margin: 20px 0px;
+        align-items: center;
+        border-radius: 6px;
+        overflow: hidden;
+        width: 600px;
+    }
+    .small-img{
+        position: relative;
+    }
+    .small-img img{
+        width: 150px;
+    }
+    .small-img-row p{
+        margin-left: 20px;
+        color: #707070;
+        line-height: 22px;
+        font-size: 22px;
+    }
+    .play-btn{
+        width: 60px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        cursor: pointer;
+    }
+    .small-img .play-btn{
+        width: 35px;
+    }
+    .video-player{
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
+    }
+    video:focus{
+        outline: none;
+    }
+    .close-btn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    /* News and Social Media */
+
+    .social-flex{
+        display: flex;
+        border: 0px solid black;
+    }
+    .whats-new heading{
+        text-align: center;
+    }
+    .news-box{
+        border: 0px solid black;
+        background-color: whitesmoke;
+        padding: 10px;
+        width:fit-content;
+        height: 400px;
+        margin-right: 10%;
+        margin-left: 7%;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    p.whats-new{
+        padding: 10px;
+        border: 1px solid black;
+        text-align: center;
+        width: 500px;
+        height: fit-content;
+        background-color: #fff;
+    }
+
+    .Social Media Container{ 
+        padding: 10px;
+        width:fit-content;
+        height: 400px;
+        margin-top: 10%;
+    }
+
+    .Social-media{
+        border: 0px solid black;
+        background-color: whitesmoke;
+        justify-content: center;
+        width: 400px;
+        text-align: center;
+        height: 420px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .Social-media img{
+        height: 150px;
+        width: 240px;
+    }
+    .Social-media .Tweets .ICON img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid green;
+    }
+
+    /* Login flex farmer worker customer */
+
+    .box{
+        font-family: 'Poppins', sans-serif;
+        margin: 30px; padding: 5px;
+        width: 700px; height: 250px;
+        outline: none; border: 1px solid rgb(75, 64, 64);
+        text-decoration: none; 
+    }
+
+    .Flex-box{
+        padding: 15px 9%;
+        padding-bottom: 100px;
+    
+    }
+
+    .Flex-box .box-container{
+        display: flex;
+        box-sizing: border-box;
+
+    }
+
+    .Flex-box .box-container .box{
+        border-radius: 5px;
+        background: #fff;
+        text-align: center;
+        padding: 30px 20px;
+        
+    }
+    
+    .Flex-box .box-container .box img{
+        height: 50px;
+    }
+
+    .Flex-box .box-container .box h4{
+        color: rgb(2, 2, 2);
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    .Flex-box .box-container .box p{
+        color: rgb(52, 43, 43);
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .Flex-box .box-container .box .btn{
+        margin-top: 10px;
+        display: inline-block;
+        background: rgb(19, 57, 121);
+        color: #fff;
+        font-size: 17px;
+        border-radius: 5px;
+        padding: 8px 25px;
+    }
+
+    .Flex-box .box-container .box .btn:hover{
+        letter-spacing: 1px;
+    }
+
+    .Flex-box .box-container .btn:hover{
+        box-shadow: 0 5px 10px rgb(124, 140, 168);
+        transform: scale(1.03);
+    }
+
+    @media (max-width:768px){
+        .container{
+            padding: 20px;
+        }
+    }
+
+    /* Last Part of Page */
+
+    .logo-last{
+        display: flex;
+        width: 50%; 
+        margin-left: 33%;
+    }
+
+    .logo-content{
+        color: hsla(16, 100%, 50%, 0.927);
+        text-align: center;
+        margin-top: 10px;
+        font-size: 60px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
+        .logo-content-1{
+            color: green;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 60px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .social-icon{
+            display: flex;
+            margin-left: 38%;
+        }
+        .social-icon img{ 
+            height: 40px;
+            width: 40px;
+            padding: 2%;
+        }
+        .Last-content{
+            background-color: rgb(6, 5, 5);
+            text-align: center;
+        }
+        .short-description p{
+            color: #fff;
+            font-size: 30px;
+            font-family:cursive;
+            margin-top: 0%;
+        }
+
+        .headings-last p{
+            color: rgb(152, 143, 143);
+            font-size: 40px;
+        }
+        .text-01 p{
+            font-size: 20px;
+            color: white;
+        }
+        .text-02 p{
+            font-size: 20px;
+            color: white;
+        }
+        .text-03 p{
+            font-size: 20px;
+            color: white;
+        }
+        .copyright p{
+            border: 1px solid white;
+            color: rgb(128, 115, 115);
+            font-size: 20px;
+        }

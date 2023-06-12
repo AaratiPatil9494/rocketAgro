@@ -1,0 +1,636 @@
+<html>
+    <head>
+        <style>
+
+.logo-kit{
+    display: flex;
+    width: 50%; 
+    margin-left: 30%;
+}
+
+.logo-area-kit{
+    color: hsla(16, 100%, 50%, 0.927);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.logo-area1-kits{
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-bar{
+    display: flex;
+}
+.first-nav .market-icon img{
+    height:80px;
+    width: 80px;
+    margin-left: 20%;
+}
+.nav-bar .cart img{
+    margin-left: 980%;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.menu-bar
+{
+    background: rgb(9, 125, 53);
+    text-align: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 30px rgb(120, 177, 8);
+    margin-top: 0%;
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.menu-bar ul
+{
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    padding: 20px; 
+    justify-content: space-around;    
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: -5px;
+}
+
+.menu-bar ul li:hover
+{
+    border: 1px solid white;
+    height: fit-content;
+}
+
+
+            .deals-box{
+                font-family: 'Poppins', sans-serif;
+                margin: 10px; padding: 1px;
+                width: 250px; height: 330px;
+                outline: none; border: 1px solid rgb(75, 64, 64);
+                text-decoration: none;       
+            }
+
+            .deals-Flex-box{
+                padding: 15px 3%;
+                padding-bottom: 100px;
+                background-size: cover;
+            }
+
+            .deals-Flex-box .first-03{
+                display: flex;
+                box-sizing: border-box;
+            }
+
+            .deals-Flex-box  .deals-box{
+                border-radius: 5px;
+                background: #fff;
+                text-align: center;
+                padding: 10px 10px;
+            }
+
+            .deals-Flex-box  .deals-box img{
+                height: 130px;
+                width: 150px;
+            }
+            .deals-Flex-box .deals-box h3{
+                color: rgb(15, 101, 45);
+                font-size: 22px;   
+            }
+
+            .deals-Flex-box .deals-box p{
+                color: rgb(52, 43, 43);
+                font-size: 18px;
+                line-height: 1.8;
+            }
+
+            .deals-Flex-box .btn{
+                margin-top: 0;
+                display: inline-block;
+                background: rgb(228, 53, 53);
+                font-size: 17px;
+                border-radius: 5px;
+                padding: 5px 10px;
+            }
+
+            .deals-Flex-box .btn:hover{
+                letter-spacing: 1px;
+            }
+
+            .deals-Flex-box .btn:hover{
+                box-shadow: 0 5px 10px rgb(79, 99, 134);
+                transform: scale(1.03);
+            }
+
+            @media (max-width:768px){
+                .container{
+                    padding: 20px;
+                }
+            }
+
+            .sellers-box{
+                font-family: 'Poppins', sans-serif;
+                margin: 10px; padding: 1px;
+                width: 250px; height: 250px;
+                outline: none; border: 1px solid rgb(75, 64, 64);
+                text-decoration: none;       
+            }
+
+            .sellers-Flex-box{
+                padding: 15px 3%;
+                padding-bottom: 100px;
+                background-size: cover;
+            }
+
+            .sellers-Flex-box .first-03{
+                display: flex;
+                box-sizing: border-box;
+            }
+
+            .sellers-Flex-box  .sellers-box{
+                border-radius: 5px;
+                background: #fff;
+                text-align: center;
+                padding: 10px 10px;
+            }
+
+            .sellers-Flex-box  .sellers-box img{
+                height: 150px;
+                width: 150px;
+            }
+            .sellers-Flex-box .sellers-box h3{
+                color: green;
+                font-size: 18px;
+            }
+
+            .arrivals-box{
+                font-family: 'Poppins', sans-serif;
+                margin: 10px; padding: 1px;
+                width: 250px; height: 250px;
+                outline: none; border: 1px solid rgb(75, 64, 64);
+                text-decoration: none;       
+            }
+
+            .arrivals-Flex-box{
+                padding: 15px 3%;
+                padding-bottom: 100px;
+                background-size: cover;
+            }
+
+            .arrivals-Flex-box .first-03{
+                display: flex;
+                box-sizing: border-box;
+            }
+
+            .arrivals-Flex-box  .sellers-box{
+                border-radius: 5px;
+                background: #fff;
+                text-align: center;
+                padding: 10px 10px;
+            }
+
+            .arrivals-Flex-box  .arrivals-box img{
+                height: 160px;
+                width: 180px;
+            }
+            .arrivals-Flex-box .arrivals-box h3{
+                color: green;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .category-box{
+                font-family: 'Poppins', sans-serif;
+                margin: 10px; padding: 1px;
+                width: 250px; height: 330px;
+                outline: none; border: 1px solid rgb(75, 64, 64);
+                text-decoration: none;       
+            }
+
+            .category-Flex-box{
+                padding: 15px 3%;
+                padding-bottom: 100px;
+                background-size: cover;
+            }
+
+            .category-Flex-box .first-03{
+                display: flex;
+                box-sizing: border-box;
+            }
+            .category-Flex-box .first-13{
+                display: flex;
+                box-sizing: border-box;
+            }
+            .category-Flex-box .first-23{
+                display: flex;
+                box-sizing: border-box;
+            }
+
+            .category-Flex-box  .category-box{
+                border-radius: 5px;
+                background: #fff;
+                text-align: center;
+                padding: 10px 10px;
+            }
+
+            .category-Flex-box  .category-box img{
+                height: 130px;
+                width: 150px;
+            }
+            .category-Flex-box .category-box h3{
+                color: rgb(15, 101, 45);
+                font-size: 22px;   
+            }
+
+            .category-Flex-box .category-box p{
+                color: rgb(52, 43, 43);
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            .category-Flex-box .btn{
+                margin-top: 0;
+                display: inline-block;
+                background: rgb(27, 12, 88);
+                font-size: 17px;
+                border-radius: 5px;
+                padding: 5px 5px;
+            }
+            .category-Flex-box .btn input{
+                width: 60px;
+            }
+
+            .category-Flex-box .btn:hover{
+                letter-spacing: 1px;
+            }
+
+            .category-Flex-box .btn:hover{
+                box-shadow: 0 5px 10px rgb(79, 99, 134);
+                transform: scale(1.03);
+            }
+
+            /* Last part of page */
+
+    .logo-last{
+        display: flex;
+        width: 50%; 
+        margin-left: 33%;
+    }
+
+    .logo-content{
+        color: hsla(16, 100%, 50%, 0.927);
+        text-align: center;
+        margin-top: 10px;
+        font-size: 60px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
+        .logo-content-1{
+            color: green;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 60px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .social-icon{
+            display: flex;
+            margin-left: 38%;
+        }
+        .social-icon img{ 
+            height: 40px;
+            width: 40px;
+            padding: 2%;
+        }
+        .Last-content{
+            background-color: rgb(6, 5, 5);
+            text-align: center;
+        }
+        .short-description p{
+            color: #fff;
+            font-size: 30px;
+            font-family:cursive;
+            margin-top: 0%;
+        }
+
+        .headings-last p{
+            color: rgb(152, 143, 143);
+            font-size: 40px;
+        }
+        .text-01 p{
+            font-size: 20px;
+            color: white;
+        }
+        .text-02 p{
+            font-size: 20px;
+            color: white;
+        }
+        .text-03 p{
+            font-size: 20px;
+            color: white;
+        }
+        .copyright p{
+            border: 1px solid white;
+            color: rgb(128, 115, 115);
+            font-size: 20px;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="nav-bar">
+        <div class="first-nav">
+            <div class="market-icon"><img src="D:\rocketAgro Project\Images\icon-market.png" alt="icon"></div>
+        </div>
+        <div class="logo-kit">
+            <div class="logo-area-kit">rocket</div>
+            <img src="D:\rocketAgro Project\Images\logo20.png" alt="rocketAgro-logo" height="80px" width="80px">
+            <div class="logo-area1-kits">Agro</div>
+            <div class="cart"><img src="D:\rocketAgro Project\Images\shopping-cart.png" alt="cart" height="50px" width="50px"></div>
+        </div>
+    </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> Shop by Category </a></li>
+                <li><a href="#"> Deals </a></li>
+                <li><a href="#"> New Arrivals </a></li>
+            </ul>
+        </div>
+
+        <div><img src="D:\rocketAgro Project\Images\market3.jpg" alt="market" height="500px" width="110%"></div>
+
+        <h1 text-align="center">Deals of the Day</h1>
+            
+        <div class="deals-Flex-box">
+            <hr>
+            <div class="first-03">
+                <div class="deals-box">
+                    <img src="D:\rocketAgro Project\Images\mango-deals.jpg" alt="emagazine">
+                    <h3>Mango Alphons..</h3>
+                    <input type="button" value="1 Dozen">
+                    <p><del>Rs.1400</del> <ins>Rs. 800</ins></p>
+                    <div class="btn"><input type="button" value="Add to Cart"></div>
+                </div>
+
+                <div class="deals-box">
+                    <img src="D:\rocketAgro Project\Images\mango-deals.jpg" alt="emagazine">
+                    <h3>Mango Alphons..</h3>
+                    <input type="button" value="1 Dozen">
+                    <p><del>Rs.1800</del> <ins>Rs. 1100</ins></p>
+                    <div class="btn"><input type="button" value="Add to Cart"></div>
+                </div>
+
+                <div class="deals-box">
+                    <img src="D:\rocketAgro Project\Images\mango-deals.jpg" alt="emagazine">
+                    <h3>Mango Alphons..</h3>
+                    <input type="button" value="1 Dozen">
+                    <p><del>Rs.1600</del> <ins>Rs. 1000</ins></p>
+                    <div class="btn"><input type="button" value="Add to Cart"></div>
+                </div> 
+              
+
+                <div class="deals-box">
+                    <img src="D:\rocketAgro Project\Images\mango-deals.jpg" alt="emagazine">
+                    <h3>Mango Alphons..</h3>
+                    <input type="button" value="1 Dozen">
+                    <p><del>Rs.2000</del> <ins>Rs. 1250</ins></p>
+                    <div class="btn"><input type="button" value="Add to Cart"></div>
+                </div>
+
+                <div class="deals-box">
+                    <img src="D:\rocketAgro Project\Images\mango-deals.jpg" alt="emagazine">
+                    <h3>Mango Alphons..</h3>
+                    <input type="button" value="1 Dozen">
+                    <p><del>Rs.2200</del> <ins>Rs. 1400</ins></p>
+                    <div class="btn"><input type="button" value="Add to Cart"></div>
+                </div>
+            </div>
+            <hr>
+            <h1 text-align="center">Best Sellers</h1>
+
+            <div class="sellers-Flex-box">
+                <hr>
+                <div class="first-03">
+                    <div class="sellers-box">
+                        <img src="D:\rocketAgro Project\Images\CLUSTER BEANS.jpg" alt="emagazine">
+                        <h3>Cluster beans (Gavar)</h3>                       
+                        <h3>Rs. 66</h3>                        
+                    </div>
+    
+                    <div class="sellers-box">
+                        <img src="D:\rocketAgro Project\Images\APLONSO.jpg" alt="emagazine">
+                        <h3>Alphonso Mango Pulp Frozen</h3>                       
+                        <h3>Rs. 500</h3>                                            
+                    </div>
+    
+                    <div class="sellers-box">
+                        <img src="D:\rocketAgro Project\Images\APPLE7.jpg" alt="emagazine">
+                        <h3>Apple (Shimla)</h3>
+                        <h3>Rs. 370</h3>
+                    </div> 
+                  
+    
+                    <div class="sellers-box">
+                        <img src="D:\rocketAgro Project\Images\CUCUMBER.jpg" alt="emagazine">
+                        <h3>Cucumber Green (kakdi)</h3>                        
+                        <h3>Rs. 55</h3>
+                    </div>
+                </div>
+                <hr>
+
+            <h1 text-align="center">New Arrivals</h1>
+
+            <div class="arrivals-Flex-box">
+                <hr>
+                <div class="first-03">
+                    <div class="arrivals-box">
+                        <img src="D:\rocketAgro Project\Images\BARLEY.jpg" alt="emagazine">
+                        <h3>Barley Flour (Jav Atta) - CF</h3>                       
+                        <h3>Rs. 135</h3>                        
+                    </div>
+    
+                    <div class="arrivals-box">
+                        <img src="D:\rocketAgro Project\Images\APRICOT.jpg" alt="emagazine">
+                        <h3>Apricot / Jardalu</h3>                       
+                        <h3>Rs. 300</h3>                                            
+                    </div>
+    
+                    <div class="arrivals-box">
+                        <img src="D:\rocketAgro Project\Images\GREEN ALMOND.jpg" alt="emagazine">
+                        <h3>Green Almond</h3>
+                        <h3>Rs. 300</h3>
+                    </div> 
+                  
+    
+                    <div class="arrivals-box">
+                        <img src="D:\rocketAgro Project\Images\LYCHEE.jpg" alt="emagazine">
+                        <h3>Lychee</h3>                        
+                        <h3>Rs. 400</h3>
+                    </div>
+                </div>
+                <hr>
+
+                <h1 text-align="center">Shop By Category</h1>
+
+            <div class="category-Flex-box">
+                <hr>
+                <div class="first-03">
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\FRUITS.jpg" alt="emagazine">
+                        <h3>Fruits</h3>                       
+                        <p>Fresh Fruits, Frozen Fruits, Fruit Basket</p>                     
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div>
+    
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\VEGETABLES.jpg" alt="emagazine">
+                        <h3>Vegetables</h3>                       
+                        <p>Regular Vegetables, Leafy Greens, Exotic Herbs, Exotic Vegetables</p>                                           
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div>
+    
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\GROCERY.jpg" alt="emagazine">
+                        <h3>Grocery & Dairy</h3>
+                        <p>Grains & Cereals, Dals & Pulses, Millets, Flours & Atta, Dry Fruits, Seeds & Nuts, Salts & Sweeteners</p>
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div> 
+                  
+    
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\spices1.jpg" alt="emagazine">
+                        <h3>Spices,Condiments & Masala</h3>                        
+                        <p>Whole Spices & Condiments, Powdered Spices & Condiments</p>
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div>
+                </div>
+
+                <div class="first-13">
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\cereals.jpg" alt="emagazine">
+                        <h3>Cereals & Pulses</h3>                       
+                        <p>All types of cereals and pulses</p>                     
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div>
+    
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\seeds.jpg" alt="emagazine">
+                        <h3>Seeds</h3>                       
+                        <p>All types of seeds of fruits and vegetables</p>                                           
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div>
+    
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\nuts.jpg" alt="emagazine">
+                        <h3>Dry Fruits & Nuts</h3>
+                        <p>All types of dry fruits and Nuts</p>
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div> 
+                
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\herbal product.jpg" alt="emagazine">
+                        <h3>Herbal Products</h3>                        
+                        <p>All medicinal products which are of herbal category</p>
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div>
+                </div>
+                <div class="first-23">
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\edible Oil.webp" alt="emagazine">
+                        <h3>Edible Oil </h3>                       
+                        <p>All types of oils which are used for various food categories</p>                     
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div>
+    
+                    <div class="category-box">
+                        <img src="D:\rocketAgro Project\Images\beverages.jpg" alt="emagazine">
+                        <h3>Beverages</h3>                       
+                        <p>All types of cold drink and drink products</p>                                           
+                        <div class="btn"><input type="text" value="View All"></div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <!--Last Part of the Page-->
+
+        <div class="Last-content">
+            <div class="logo-last">
+                <div class="logo-content">rocket</div>
+                    <img src="D:\rocketAgro Project\Images\logo20.png" alt="rocketAgro-logo" height="100px" width="100px">
+                    <div class="logo-content-1">Agro</div>
+            </div>
+
+            <div class="short-description">
+                <p>Improving lives by solving problems in agriculture and the environment. </p>
+            </div>
+
+            <div class="headings-last"><p>Social</p></div>
+            <div class="middle-icon">
+                <div class="social-icon">
+                    <img src="D:\rocketAgro Project\Images\youtube.png" alt="youtube">
+                    <img src="D:\rocketAgro Project\Images\twitter-i.png" alt="twitter">
+                    <img src="D:\rocketAgro Project\Images\instagram.png" alt="insta">
+                    <img src="D:\rocketAgro Project\Images\facebook.png" alt="facebook">
+                </div>
+            </div>
+
+            <div class="headings-last"><p>Contact</p></div>
+            <div class="middle-icon">
+                <img src="D:\rocketAgro Project\Images\02.png" alt="icon-02">
+            </div>
+            <div class="text-01">
+                <p>Contact Us</p>
+                <p>Feedback</p>
+            </div>
+
+            <div class="headings-last"><p>General</p></div>
+            <div class="middle-icon">
+                <img src="D:\rocketAgro Project\Images\03.png" alt="icon-03">
+            </div>
+
+            <div class="text-02">
+                <p>Accesibility</p>
+                <p>Privacy Policy</p>
+                <p>Term & Conditions</p>
+            </div>
+
+            <div class="headings-last"><p>Sitemap</p></div>
+            <div class="middle-icon">
+                <img src="D:\rocketAgro Project\Images\04.png" alt="icon-04">
+            </div>
+
+            <div class="text-03">
+                <p>About</p>
+                <p>Countries</p>
+                <p>News & Information</p>
+                <p>Parteners</p>
+                <p>Resources</p>
+            </div>
+
+            <div class="middle-icon">
+                <img src="D:\rocketAgro Project\Images\05.png" alt="icon-05">
+            </div>
+
+            <div class="copyright">
+                <p> Copyright @ 2023, rocketAgro.All Rights Reserved </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="web" href="F:\website\fontawesome\metadata.file">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+    .contact{
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url("contact-bg.jpg");
+        background-size: cover;
+        border: 2px solid black;
+    }
+
+    .content{
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .content h2{
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .content p{
+        font-weight: 300;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .contact-page{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .contact-info{
+        /* display: flex; */
+        flex-direction: column;
+
+    }
+
+    .contact-page .contact-info .contact-box{
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+
+    .contact-page .contact-info .contact-box .text{
+        display: flex;
+        margin-left: 4px;
+        font-size: 16px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 300;
+    }
+
+    .contact-page .contact-info .contact-box .text h3{
+        font-weight: 500;
+        color: red;
+    }
+
+    .contactform{
+        width: 60%;
+        padding: 40px;
+        background: #fff;
+    }
+
+    .contactform h2{
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .contactform .inputBox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contactform .inputBox input,
+.inputBox textarea{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+
+    .contactform .inputBox span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+    }
+
+    .contactform .inputBox input:focus ~ span,
+    .contactform .inputBox input:valid ~ span,
+    .contactform .inputBox textarea:focus ~ span,
+    .contactform .inputBox textarea:valid ~ span
+    {
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }
+
+    .contactform .inputBox input[type="submit"]{
+        width: 100px;
+        background: #00bcd4;
+        color: #070707;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        margin-right: 10%;
+    }
+
+    @media (max-width: 991px)
+    {
+        .contact{
+            padding: 50px;
+        }
+        .contact-page{
+            flex-direction: column;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2> Contact Us </h2>
+            <br><br>
+            <p> Please fill in the form for any interesting news,stories,case studies,research projects you wish to discuss,new innovation,feedback or any general questions,send us an enquiry. We will get back to you within 1 working day. Thank you !</p>
+        </div>
+        <div class="contact-page">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <div class="text">
+                        <h3>Address:</h3>
+                        <p>A.P.Chuye, <br>Tal.Karveer,Dist.Kolhapur</p>
+                    </div>
+                </div>
+                
+
+                <div class="contact-box">
+                    <div class="text">
+                        <h3>Phone:</h3>
+                        <p>8669589494</p>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <div class="text">
+                        <h3>Email:</h3>
+                        <p>aaratipatil599@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="user" required="required" placeholder="Full name">
+                        <!-- <span>Full Name</span> -->
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required" placeholder="Email">
+                        <!-- <span>Email</span> -->
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" placeholder="Type your Message"></textarea>
+                        <!-- <span>Type your Message...</span> -->
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="submit-btn" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+    
+    
+
+        
